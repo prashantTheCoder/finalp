@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mvd-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 50vh;
+   
+    
+
+}
+.mvd-img{
+    width: 60%;
+    background-color: aliceblue;
+    height: 100%;
+    margin-top: 2%;
+}
+
+.mvd-desc{
+    width: 40%;
+    background-color: antiquewhite;
+    margin-top: 2%;
+    font-size: 1vw;
+}
+.mvd-img {
+    height: 360px; /* Set the height as per your preference */
+    width: 50%; /* Ensure it takes up the full width */
+    overflow: hidden; /* Prevent content from spilling outside */
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100%; /* Match the height of the container */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    display: block; /* Avoid inline image spacing issues */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+}
+.show-more-dest{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(0, 119, 255);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.show-more-dest:hover{
+    background-color:rgba(0, 119, 255, 0.849) ;
+}
+h1{
+    background-color: #ff5653;
+    color: white;
+}
+
+
+
