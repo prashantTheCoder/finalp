@@ -1,0 +1,922 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+
+#Bihar-logo{
+    height: 100px;
+    margin-top: 7px;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 100vh; */
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Budhha1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 5px 15px;
+    
+  
+  
+
+    
+    /* box-shadow: 10px 5px 5px rgba(156, 148, 148, 0.61); */
+    /* background-color: whitesmoke; */
+    /* border: 2px solid rgba(128, 128, 128, 0.674);
+    border-radius: 60px; */
+    /* margin-left: 5px; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+   
+    
+}
+nav{
+    height: 80px;
+    /* min-width: 40vw; */
+    width: 40vw;
+    background-color: #ffffffa3;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: 65px;
+}
+nav ul li a:hover{
+    color: #ff5653;
+    font-size: 27px;
+}
+.welcome-msg-container{
+    height: 170px;
+    width: 65vw;
+}
+.welcome-msg{
+    color: #ebecf0;
+    font-size: 3.5vw;
+    letter-spacing: 7px;
+    font-family: monospace;
+    font-weight: 700;
+    border-right: 5px solid red;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation:typing 4s steps(27),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+@keyframes typing {
+    from{width: 0;}
+}
+span{
+    color: orangered;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 43px;
+    margin-top: 5px;
+}
+ul li{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 2;
+}
+ul li:hover .dropdown {
+    display: block;
+}
+.dropdown li {
+    display: block;
+    padding: 10px 0;
+}
+.dropdown-menu{
+    color: #ff5653;
+}
+.dropdown-menu:hover{
+    color: black;
+}
+
+ul li:hover .dropdown-menu-Patna {
+    display: block;
+}
+.dropdown-menu-Patna li {
+    display: block;
+    padding: 10px 0;
+}
+.dropdown-menu-Patna{
+    color: white;
+}
+.dropdown-menu-Patna:hover{
+    color: yellow;
+}
+.Location{
+    flex: 1;
+}
+.search-bar{
+    background-color: #fff;
+    width: 50vw;
+    height: 70px;
+    margin:10px ;
+    
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    margin-top: -122px;
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0));
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    height: 55px;
+    width: 55px;
+    border: none;
+    background-color: orangered;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin-left: 168px;
+}
+.search-for{
+    margin-left: 240px;
+    color:white;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-size: 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search-bar form label{
+    font-weight: 700;
+}
+#search-icon{
+    margin-top: 5px;
+}
+#header-text{
+    position: absolute;
+    color: bisque;
+    font-size: 25px;
+    width: 50vw;
+    margin-top: 150px;
+    height: 150px;
+    font-weight: 700;
+    font-family: cursive;
+}
+.profile{
+    margin-top: 18px;
+    height: 50px;
+}
+.action-bar{
+    width: 333px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#profile{
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.signup{
+    height: 40px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 17px;
+    background-color:orangered;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+}
+#profile:hover{
+    background-color: rgb(255, 0, 102);
+}
+#Budhha-img{
+    height: 70vh;
+    width: 90vw;
+    margin-left: 70px;
+    margin-top: 8px;
+    border-radius: 8px;
+    /* box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.781); */
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.842));
+}
+#moving{
+    font-size: xx-large;
+    color: rgb(255, 77, 0);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.signup:hover{
+    background-color: red;
+}
+.signup:active{
+    background-color: teal;
+}
+
+
+.Bihar{
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+}
+#Patna-text{
+    margin-left: 85px;
+    color: black;
+    
+}
+h1{
+  margin-top: 50px;
+    font-size: 2.625rem;
+}
+/* .photos{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+} */
+
+
+/* .Bihar:hover{
+   height: 230px;
+   filter: brightness(1);
+} */
+.Bihar-images{
+    height: 245px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width: 350px;
+    /* border: 2px solid rgba(0, 0, 0, 0.338); */
+    border: none;
+    border-radius: 8px;
+
+
+}
+.Patna{
+    position: absolute;
+    color: orangered;
+    text-align: center;
+    margin-left: 119px;
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.dest{
+    margin-bottom: -7px;
+}
+
+/* .footer-container{
+    margin-top: 15px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.footer-items p{
+    margin: 12px;
+    color: white
+}
+.search-icon{
+    position: fixed;
+    height: 20px;
+}
+#search-img{
+    margin-top: 5px;
+}
+#About-Bihar{
+    color: black;
+    background-color: #6ba908;
+}
+#Bihar-map{
+    height: 100%;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 88px;
+}
+.Map-container{
+    height: 300px;
+    width: 400px;
+    margin-left: 15px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 99vw;
+    height: 320px;
+    margin-top: 100px;
+} */
+.search-for span{
+    color: #ebecf0;
+}
+
+
+ .container{
+    padding: 2rem;
+} 
+ .container{
+    margin-top: 10px;
+    background-color: #c0c3d2;
+ }
+/* Slider container styling */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* Navigation button styles */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Dots navigation */
+.dots-wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+#Bihar-darshanamm{
+    height: 50px;
+}
+.About-Nalanda-University{
+    height: 440px;
+    width: 90vw;
+    margin-top: 100px;
+    margin-left: 55px;
+    font-size: larger;
+    word-spacing: 2px;
+    color: rgba(0, 0, 0, 0.769);
+    background-color: rgba(240, 248, 255, 0.687);
+}
+.New-Nalanda-University{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    width: 100vw;
+}
+#New-Nalanda-img{
+    height: 300px;
+    border-radius: 15px;
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.756));
+    filter: brightness(.5);
+}
+#NewNU{
+    margin-top: 100px;
+    margin-left: 0px;
+    color: Black;
+}
+
+/* .social-media{
+    height: 50px;
+}
+.social-media:hover{
+    height: 55px;
+} */
+#Your-state{
+    height: 40px;
+    width: 100px;
+    margin-top: -10px;
+    font-size: large;
+    color: grey;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#New-Nalanda-University-text{
+    position: absolute;
+    z-index: 1;
+    /* margin-right: 772px; */
+    left: 7%;
+    top: 42%;
+    color: #fff;
+    font-size: 40px;
+}
+#New-Nalanda-University-text p{
+    margin-left: 61px;
+    padding: 7px;
+}
+
+.bag-pack{
+    height: 100%;
+    position: absolute;
+    left: 5%;
+}
+#bag-pack2{
+    height: 100%;
+    position: absolute;
+    left: 15%;
+}
+.header-img{
+    position: relative;
+    width: 70vw;
+    border-radius: 50px;
+    margin-bottom: 15%;
+    background-color: #ebecf0;
+}
+.menu-bar{
+    color: #ebecf0;
+    margin-top: 15px;
+    font-size: 3vw;
+    margin-right: 0px;
+}
+.Patna span{
+    color: orangered;
+    margin-left: -67px;
+}
+
+/* @media screen and (max-width:768px){
+    .welcome-msg{
+        display: none;
+        font-size: 2rem;
+        border-right: 2px solid red;
+    }
+    
+    .search-for {
+        margin-left: 80px;
+        font-size: 17vw;
+        margin-top: -60%;
+        color: #ebecf0;
+        font-weight: 500;
+    }
+    .menu-bar{
+        display: block;
+        margin-right: 0px;
+    }
+    nav{
+        display: none;
+    }
+    .signup{
+        margin-left: 40px;
+    }
+    .search-bar{
+        width: 100%;
+    }
+    .search-bar form button{
+        height: 55px;
+        width: 55px;
+        border: none;
+        background-color: orangered;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        margin-left: 0px;
+    }
+    header{
+        height: 139vh;
+        background-size: cover;
+        padding: 5px;
+        width: 150%;
+    }
+ 
+   
+  
+    .Explore h1{
+        margin-left: 60px;
+        font-weight: 100;
+        color: rgb(101, 96, 96);
+    }
+    .Explore{
+        width: 150%;
+    }
+    .search-for span{
+        font-weight: 400;
+        font-style: italic;
+        color: #ff5653;
+    }
+    .Bihar{
+        width: 500px;
+    }
+    .Patna{
+        margin-left: 150px;
+    }
+    
+    
+} */
+
+
+
+
+.Cuisines-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        /* justify-content: center; */
+    height: 300px;
+    width: 100vw;
+    margin: 30px;
+    margin-left: 2%;
+    gap: 20px;
+
+}
+.Cuisines{
+    height: 100%;
+    width: 50%;
+
+    /* background-color: red; */
+}
+.about-Cuisines{
+    height: 100%;
+    width: 35%;
+    background-color: antiquewhite;
+    margin-right: 10%;
+    padding: 0px 20px;
+    border-radius: 10px;
+    
+}
+.Cuisines img{
+    cursor: pointer;
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.756));
+    margin-left: 13%;
+}
+.about-Cuisines p{
+    color: grey;
+    font-size: 1.3rem;
+    
+}
+
+
+/* Container2 */
+
+#Cuisines2 img{
+    width: 62%;
+    margin-left: 12%;
+}
+
+p{
+    color: grey;
+}
+
+h1{
+    color: black;
+}
+#sattu img{
+   margin-bottom: 20px;
+}
+.footer-items p:hover{
+    cursor: pointer;
+    color: #ff5653;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+
+.hr-card{
+    height: 570px;
+    width: 47%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    
+    
+}
+.hr-description{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 17px;
+    width: 45vw;
+    
+    
+}
+.hr-card img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 17px 18px;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    
+    
+}
+.hr-card img:hover{
+    transform: scale(1.1);
+   
+}
+
+body{
+    background-color: white;
+    /* overflow-x: hidden; */
+}
+.menu-bar-items{
+    display: none;
+}
+.hr-card:hover{
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.756));
+}
+
+.Culture-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 65%;
+    margin-left: 0%;
+}
+.Culture{
+    width: 550px;
+    height: 350px;
+    margin: 15px;
+}
+.Culture-heading-container{
+    width: 60%;
+    margin-right: 38%;
+}
+.Culture img{
+    width: 100%;
+    height: 100%;
+}
+.about-Culture{
+    width: 450px;
+    height: 100%;
+    font-size: 1.2rem;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 99vw;
+    height: 300px;
+    margin-top: 100px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.connect-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.84);
+}
+.connect-image{
+    height: 300px;
+}
+.form-container{
+    color: #ff5653;
+    font-size: 3rem;
+    margin: auto;
+}
+.form-container form input{
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    margin-left: 2px;
+    padding: 25px 73px;
+}
+
+.connect-image img{
+    height: 100%;
+    object-fit: cover;
+}
+.contacts{
+    color: white;
+}
+.contacts h2{
+    color: #ff5653;
+}
+
+body{
+    background-color: #c0c3d2;
+    margin: 0; /* Remove default margin */
+    
+}
+
+
+/* for img slider */
+
+
+
+
+/* Responsive design */
+
+@media (max-width:480px) {
+    header{
+        width: 180%;
+        height: 175vh;
+    }
+    nav{
+        display: none;
+    }
+    .signup{
+        margin-left: 5%;
+    }
+    .welcome-msg{
+        display: none;
+    }
+    .search-for{
+        font-size: 16vw;
+        margin-block-start: auto;
+        margin-left: 40vw;
+        margin-top: -50%;
+    }
+    .search-bar{
+        width: 144vw;
+        margin-top: -25vh;
+
+    }
+    .search-for span{
+        color: orangered;
+        font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .search-bar form button{
+        margin-left: 21%;
+    }
+    .Location{
+        width: 10px;
+    }
+    .Explore h1{
+        font-size: 15vw;
+    }
+    .Explore{
+        margin-left: 18%;
+        width: 155vw;
+    }
+    .card-container{
+      width: 160vw;
+    }
+    
+   .hr-description{
+    width: 95%;
+    margin-left: 8px;
+   }
+   .hr-description h1{
+    font-size: 1.5rem;
+   }
+   .hr-card{
+    width: 100%;
+    height: 97vh;
+    margin-left: 1%;
+    padding: 10px 20px;
+   }
+   .menu-bar-items{
+    display: block;
+   }
+   .Cuisines-container{
+    width: 176%;
+   }
+   .Cuisines{
+    width: 100%;
+    height: 127%;
+   }
+   .about-Cuisines{
+    width: 83%;
+    height: 116%;
+    margin-top: 7%;
+    margin-left: 9%;
+   }
+   .Cuisines img {
+    height: 100%;
+    width: 80%;
+    margin-left: 9%;
+   }
+   .Cuisines-heading{
+    width: 100vw;
+    font-size: 4rem;
+    margin-left: 25%;
+    color: white;
+   }
+   .Cuisines-heading-container{
+    background-color: black;
+    width: 178%;
+    margin-top: 5%;
+   }
+   #Cuisines2 img{
+    width: 81%;
+   }
+   .about-Cuisines p{
+    font-size: 1rem;
+   }
+   
+  .Culture-container{
+    margin-top: 720%;
+    width: 180vw;
+   }
+   .Culture-heading-container{
+    background-color: black;
+    width: 100%;
+    margin-top: 60vh;
+    margin-right: 0%;
+   }
+   .Culture-heading-container h1{
+    color: white;
+    margin-left: 27%;
+    font-size: 4rem;
+   }
+   .Culture{
+    margin-top: 5%;
+   }
+   .about-Culture{
+    width: 545px;
+   }
+   
+ 
+}
+
+
+.menu-bar-items ul li{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+

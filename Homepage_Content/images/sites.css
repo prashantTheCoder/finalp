@@ -1,0 +1,34 @@
+.Tigerreserve{
+    height: 400px;
+    width: 100%;
+}
+#valmiki{
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 800px;
+    border-radius: 9px;
+}
+h1{
+    text-align: center;
+    letter-spacing: 3px;
+    color: blueviolet;
+}
+.sites-container{
+    display: flex;
+    height: 400px;
+    width: 100vw;
+ 
+}
+#pawapuri-temple{
+    height: 400px;
+    margin-right: 35px;
+    margin-top: 20px;
+    border-radius: 9px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.877);
+}
+h1:hover{
+    color: red;
+}

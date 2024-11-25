@@ -1,0 +1,44 @@
+.img-container img{
+    height: 423px;
+    width: 90%;
+    margin-left: 5%;
+    object-fit: cover;
+}
+.description{
+    background-color: antiquewhite;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+h2,h3{
+    color: #ff5653;
+}
+.show-more-btn{
+    margin-left: 50%;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: #ff5653;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.show-more-image img{
+    height: 625px;
+    width: 90%;
+    margin-left: 5%;
+    object-fit: cover;
+}
+.show-more-description{
+    background-color: antiquewhite;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width:480px) {
+    .show-more-btn{
+        margin-left: 30%;
+    }
+}

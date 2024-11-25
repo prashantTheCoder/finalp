@@ -15,7 +15,7 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bihar Darshanamm</a>
+            <a class="navbar-brand" href="#"><img src="images/Bihar_district_map.png" alt="logo" class="Bihar-Darshanamm"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,9 +39,9 @@
                     <li><a class="dropdown-item" href="#">Historical Places</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Glories</a>
-                </li>
+                </li> -->
               </ul>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,12 +49,11 @@
               </form>
             </div>
           </div>
-          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button"class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
 
           
         </nav>
         
-
 
 
        
@@ -86,9 +85,10 @@
       <main>
  
         <!-- Slider1  -->
+    
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" class="carousel1">
-
-          <h1 class="welcome-msg">Welcome to <span>Bihar Darshanamm</span></h1>
+ 
+          <!-- <h1 class="welcome-msg">Welcome to <span>Bihar Darshanamm</span></h1> -->
           <h3 class="msg">Bihar: The Cradle of Ancient Heritage</h3>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
@@ -122,9 +122,9 @@
 
         <!-- Slider2 -->
 
-  
-        <div id="carouselExampleCaptions" class="carousel slide" class="coursel-container" ht="50vh">
-          <h1 class="must-visited-destinations">Must Visited Destinations</h1>
+        <h1 class="must-visited-destinations">Must Visiting Destinations</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" class="coursel-container">
+        
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -180,79 +180,57 @@
   
     <!-- Vertical cards -->
     <div class="card-container">
-
-      <div class="card">
-        <img src="images/Mahabodhi_temple.jpg" alt="Mahabodhi_temple">
-        <div class="card-desc">
-         <h1>MahabodhiTemple</h1> 
-
-
-        </div>
-    
+  <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions1Modal">
+    <div class="card">
+      <img src="images/Mahabodhi_temple.jpg" alt="Mahabodhi_temple">
+      <div class="card-desc">
+        <h1>Mahabodhi Temple</h1>
       </div>
+      
+    </div>
+  </a>
+  <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions2Modal">
+    <div class="card">
+      <img src="images/Gurpa.jpg" alt="Gurpa Hill">
+      <div class="card-desc">
+        <h1>Gurpa Hill</h1>
+      </div>
+    </div>
+  </a>
 
-        <div class="card">
-          <img src="images/Gurpa.jpg" alt="Gurpa Hill">
-          <div class="card-desc">
-           <h1>Gurpa Hill</h1> 
-          </div>
-        </div>
-
-        <div class="card">
+       <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions3Modal"><div class="card">
           <img src="images/junglesafari.jpg" alt="naturesafari">
           <div class="card-desc">
            <h1>Nature Safari</h1> 
           </div>
-        </div>
+        </div></a> 
 
      
 
-          <div class="card">
+          <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions4Modal"><div class="card">
             <img src="images/Waterfall.webp" alt="Waterfall">
             <div class="card-desc">
               <h1>Kaimur Waterfall</h1> 
             </div>
-          </div>
+          </div></a>
     </div>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal-btn">
-                Launch demo modal
-              </button>
+    
               
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                 
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde error sapiente molestias minima voluptatem cupiditate? Atque minima non cum adipisci aperiam. Est itaque praesentium, sit eligendi officia ea esse quis? Quisquam quia quasi quas dolor distinctio rem. Eius possimus enim sint explicabo vero tempore eum. Quia aut ratione, illum quidem veritatis quaerat consequatur cum perspiciatis maxime mollitia nemo vel provident nostrum sapiente explicabo doloribus, hic doloremque? Alias porro ipsam nesciunt cumque fugiat? Asperiores expedita laborum magni dolore soluta sapiente voluptas! Distinctio pariatur expedita quisquam hic, eaque, dolorum optio dolorem, aliquid tempore neque corrupti? Repudiandae maiores placeat facilis quis nostrum. Quaerat, reiciendis ducimus eveniet voluptatibus blanditiis esse voluptas consequuntur amet eum asperiores sequi maxime nihil labore consequatur quae nisi autem laboriosam beatae, tempora recusandae natus corrupti nostrum. Officia fugit dolorum quisquam labore eos suscipit? Neque corporis id ducimus quae ipsum cupiditate aliquid quibusdam, voluptas nostrum sunt libero, maxime assumenda, praesentium porro natus deserunt debitis. Fugiat quaerat repudiandae laudantium, eos distinctio incidunt sint. Dolorem, debitis. Quod optio cupiditate qui, sequi nisi iusto quibusdam tenetur dolorem maiores molestiae nemo suscipit eos sint repudiandae laborum voluptates distinctio doloremque, dolores alias aliquam beatae. Consequuntur quae ut nulla fugiat quas totam id quam modi, pariatur natus.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
     <!-- Horizontal Cards -->
     <div class="hr-card-container">
 
-      <div class="hr-card">
+      <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions5Modal"><div class="hr-card">
         <img src="images/mahavirjim.jpg" alt="Mahavir_temple">
         <div class="hr-card-desc">
          <h1>Mahavir Mandir</h1> 
-        </div>
+        </div></a>
       </div>
 
-        <div class="hr-card">
+        <a href="#" class="attraction-image" data-bs-toggle="modal" data-bs-target="#topattractions6Modal"><div class="hr-card">
           <img src="images/Isckon.webp" alt="Isckon">
           <div class="hr-card-desc">
            <h1>Isckon Temple</h1> 
-          </div>
+          </div></a>
         </div>
 
     </div>
@@ -271,6 +249,282 @@
         <div class="show-more-description">
           <button class="show-more-btn">Explore Now</button>
     </div>
+
+     
+        
+        <!-- LoginModal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </form>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="upcoming-heading">Bihar to host Khelo India Youth Games, Para Games in 2025</h1>
+        <div class="upcomings-container">
+      
+          <div class="upcoming-img">
+            <img src="images/KIYG.jpg" alt="">
+          </div>
+
+          <h2>Introduction:</h2>
+          <p>In an exciting development for sports in India, Bihar has been announced as the host state for the Khelo India Youth Games (KIYG) and Khelo India Para Games in 2025. This prestigious event marks a significant milestone for Bihar, highlighting its growing infrastructure and commitment to promoting sports and inclusivity.</p>
+
+          <h2>Key highlights:</h2>
+          <p>First Time for Bihar:
+
+            This is the first time Bihar has been selected to host such a large-scale national sports event under the Khelo India initiative, launched by the Government of India in 2018 to revitalize the sports culture in the country.Event Scale:
+
+            Thousands of athletes from across India will participate in the Youth Games, which showcase emerging talent in multiple sports disciplines.
+            The Para Games will celebrate the abilities and achievements of differently-abled athletes, promoting inclusivity and diversity in sports.Venues and Facilities:
+
+            Rajgir Sports Complex, the state's ultra-modern facility, will serve as a central venue for many events.
+            Additional venues in cities like Patna, Gaya, and Bhagalpur are being upgraded to meet international standards.
+            Facilities include state-of-the-art stadiums, indoor sports arenas, and Olympic-grade tracks and fields.Focus on Development:
+
+Hosting the games is expected to boost the state’s sports infrastructure and encourage youth participation in athletics and games.
+The event will showcase Bihar’s cultural heritage and strengthen its position as an emerging sports hub. <br><br>Inclusive Participation:
+
+The Para Games will provide a platform for differently-abled athletes to compete at the highest level, promoting equal opportunities in sports.Inclusive Participation:
+
+The Para Games will provide a platform for differently-abled athletes to compete at the highest level, promoting equal opportunities in sports.
+
+</p>
+
+<h2>Anticipated Benefits:</h2>
+<p>Boost to Sports Culture:
+
+  The games will inspire the youth of Bihar to actively participate in sports and consider it as a viable career option.
+  Local athletes will have the advantage of competing in front of home crowds. <br><br>Economic Impact:
+
+  Tourism and hospitality sectors are expected to witness growth as the games attract participants, officials, and spectators from across the country.
+  Employment opportunities in areas like event management, infrastructure development, and transportation are anticipated.Global Attention:
+
+  By hosting a national-level event, Bihar will gain recognition for its efforts in building sports facilities and nurturing talent.
+  The state will also demonstrate its ability to manage large-scale, multi-sport events.</p>
+
+  <h2>Preparations Underway:</h2>
+  <p>Infrastructure Development:
+
+    New sports complexes are being constructed, and existing ones are undergoing renovations to ensure they meet international standards.
+    Special attention is being given to accessibility features for the Para Games. <br><br>Athlete Training:
+
+    The state government is providing training support to athletes from Bihar to enhance their performance and representation in the games.Collaboration:
+
+    The Bihar government is working closely with the Ministry of Youth Affairs and Sports and the Sports Authority of India (SAI) to ensure the successful execution of the event.</p>
+
+
+        </div>
+
+
+
+<!-- TopAttractions1Modal -->
+<div class="modal fade" id="topattractions1Modal" tabindex="-1" aria-labelledby="topattractions1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions1ModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Mahabodhi_temple.jpg" alt="" id="attraction-image">
+       
+The Mahabodhi Temple, located in Bodh Gaya, Bihar, is one of the most important pilgrimage sites for Buddhists worldwide. It holds great spiritual significance as it marks the place where Prince Siddhartha Gautama (Buddha) attained enlightenment under the sacred Bodhi tree.The temple was built during the reign of Emperor Ashoka in the 3rd century BCE.
+Ashoka is credited with constructing the original structure, although the current temple complex has undergone several renovations over the centuries.The Mahabodhi Temple Complex was declared a UNESCO World Heritage Site in 2002, recognizing its cultural and religious importance.The temple stands about 55 meters tall and is built in traditional Indian architectural style.
+It features a central tower surrounded by four smaller towers, symbolizing the essence of Buddhist stupas.
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TopAttractions2Modal -->
+<div class="modal fade" id="topattractions2Modal" tabindex="-1" aria-labelledby="topattractions2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions2ModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Gurpa.jpg" alt="" id="attraction-image">
+       
+        Gurpa Hill, located near Gaya in Bihar, holds great historical and spiritual significance in Buddhism. It is revered as the place where Mahakassapa, one of Lord Buddha's foremost disciples, is believed to have entered parinirvana (final liberation). The hill is an important site for Buddhists and attracts pilgrims and trekkers alike.Mahakassapa, who succeeded Buddha as the leader of the Buddhist Sangha, is said to have chosen Gurpa Hill as his final resting place.
+        According to Buddhist texts, he entered a cave on the hill to await the appearance of Maitreya Buddha, the prophesied future Buddha.Gurpa Hill is known for its scenic beauty and serene surroundings.
+        It is a popular destination for nature enthusiasts and trekkers, offering panoramic views of the surrounding landscape.The hill is located approximately 40 km northeast of Gaya, making it easily accessible from other prominent Buddhist sites such as the Mahabodhi Temple in Bodh Gaya.
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TopAttractions3Modal -->
+<div class="modal fade" id="topattractions3Modal" tabindex="-1" aria-labelledby="topattractions3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions3ModalLabel">Nature Safari</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/junglesafari.jpg" alt="" id="attraction-image">
+       
+
+        The Nature Safari in Bihar, located at Rajgir, is a relatively new addition to Bihar's growing list of eco-tourism attractions. It offers visitors a unique opportunity to explore the state's natural beauty and wildlife through an exciting array of activities. Opened in 2021, the Nature Safari has quickly gained popularity among nature lovers, adventurers, and families.Situated in the Nalanda district of Bihar, the Nature Safari is nestled amidst the scenic beauty of the Rajgir hills, which are part of the ancient Rajgir Wildlife Sanctuary.A major highlight is India's first glass skywalk, offering breathtaking views of the lush green valley below.
+        The walkway provides a thrilling experience and a perfect opportunity for photography enthusiasts.
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TopAttractions4Modal -->
+<div class="modal fade" id="topattractions4Modal" tabindex="-1" aria-labelledby="topattractions4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions4ModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/KAIMUR.jpeg" alt="" id="attraction-image">
+       
+        The Kaimur Hills, part of the Vindhya mountain range, stretch across Bihar and Uttar Pradesh. This scenic region is known for its natural beauty, archaeological significance, and cultural heritage. It is a lesser-explored gem in Bihar, offering stunning landscapes, waterfalls, and ancient sites.The Kaimur Hills are adorned with dense forests, waterfalls, and rivers, making it a serene retreat for nature enthusiasts.
+        Prominent waterfalls include the Telhar Waterfall, a major tourist attraction, especially during the monsoon season.Several temples and pilgrimage sites are located in and around the Kaimur Hills, drawing devotees throughout the year.
+        The Mundeshwari Temple, located nearby, is one of the oldest functional temples in India and a must-visit for spiritual seekers.
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TopAttractions5Modal -->
+<div class="modal fade" id="topattractions5Modal" tabindex="-1" aria-labelledby="topattractions5ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions5ModalLabel">Mahavir Temple</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Mahavir-Mandir.jpg" alt="" id="attraction-image">
+       
+        The Mahavir Mandir in Patna, Bihar, is one of the most popular and revered temples dedicated to Lord Hanuman. It is visited by millions of devotees annually and holds significant cultural and religious importance in the state.The temple's origins are not precisely known, but it gained prominence in the 20th century. It was initially a small shrine and has since evolved into a grand temple.
+        The temple is managed by the Mahavir Sthan Nyas Samiti, which was established in 1948.The temple has a simple yet elegant architecture with a traditional North Indian temple design.
+        The sanctum houses a statue of Lord Hanuman, believed to fulfill the wishes of devotees.
+        The temple also features idols of Lord Shiva, Lord Rama, Sita, and Radha-Krishna.The temple sees massive footfall during Ram Navami, Hanuman Jayanti, and other Hindu festivals. The celebrations are marked with special prayers, rituals, and distribution of prasad.The Mahavir Mandir Trust engages in extensive social and charitable activities, including funding hospitals, education, and disaster relief.
+        The trust also runs the Mahavir Cancer Sansthan, a renowned cancer hospital in Patna.
+
+
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TopAttractions6Modal -->
+<div class="modal fade" id="topattractions6Modal" tabindex="-1" aria-labelledby="topattractions6ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="topattractions6ModalLabel">Isckon Temple</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Isckon.webp" alt="" id="attraction-image">
+       
+        The ISKCON Temple in Patna, Bihar, is a prominent center for spiritual devotion and cultural activities. It is managed by the International Society for Krishna Consciousness (ISKCON), a globally renowned organization dedicated to the teachings of Lord Krishna as described in the Bhagavad Gita and Srimad Bhagavatam.The temple was inaugurated in 2010 and is part of the worldwide ISKCON network established by A.C. Bhaktivedanta Swami Prabhupada.
+        It serves as a spiritual hub for Krishna devotees in Bihar and aims to spread Vaishnavism (devotion to Lord Krishna).The temple serves as a cultural and spiritual hub, especially for families, children, and youth looking to deepen their understanding of Lord Krishna's teachings.
+        Visitors often enjoy the melodious kirtans and participate in interactive spiritual discourses.
+
+
+        
+
+        <div id="map" style="height: 300px; width: 100%; margin-top: 10px;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       <a href="must-visiting-detail.html"> <button type="button" class="btn btn-primary">See More</button></a>
+      </div>
+    </div>
+  </div>
+</div>
       </main>
       
 
@@ -280,5 +534,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="Homepage.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-fb9G05iYBXuFipQLLfxXlkGQVA6uHs&callback=initMap" async defer></script>
+
   </body>
 </html>

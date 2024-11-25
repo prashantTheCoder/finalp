@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#Bihar-logo{
+    height: 50px;
+    margin-top: 7px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-bar a{
+    margin-bottom: 8px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    /* box-shadow: 10px 5px 5px rgba(156, 148, 148, 0.61); */
+    /* background-color: whitesmoke; */
+    /* border: 2px solid rgba(128, 128, 128, 0.674);
+    border-radius: 60px; */
+    margin-left: 5px;
+}
+.nav-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.nav-container a{
+    margin-top: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Gill Sans", sans-serif;
+    color: grey;
+    word-spacing: 2px;
+    font-weight: 700;
+    font-size: large;
+}
+#search-input{
+    position: absolute;
+    margin-top: 21px;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    margin-left: 35%;
+    border: none;
+    font-size: larger;
+}
+.profile{
+    margin-top: 18px;
+    height: 50px;
+}
+.action-bar{
+    width: 200px;
+    display: flex;
+}
+.search-bar{
+    width: 100vw;
+    margin: auto;
+    height: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.306);
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.842));
+    border: none;
+    background-color: black;
+}
+#search-icon{
+    position: absolute;
+    margin-top: 35px;
+    height: 32px;
+    margin-left: 995px;
+}
+
+
+
+.nav-container a:hover{
+    color: blue;
+    font-size: larger;
+    border-bottom: 3px solid red;
+    /* transition-duration: 0s;
+    transition-delay: 1s;
+    transition-property: all; */
+}
+.nav-container a:active{
+    color: red;
+}
+
+#profile{
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.signup{
+    height: 40px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 17px;
+    background-color:#6ba908;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+}
+#profile:hover{
+    background-color: rgb(255, 0, 102);
+}
+.dest{
+    margin-bottom: -7px;
+}
+.footer-container{
+    margin-top: 50px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.footer-items p{
+    margin: 12px;
+    color: white
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 99vw;
+    height: 320px;
+    margin-top: 100px;
+}
+#Bihar-darshanamm{
+    height: 50px;
+}
+.social-media{
+    height: 50px;
+}
+.social-media:hover{
+    height: 55px;
+}

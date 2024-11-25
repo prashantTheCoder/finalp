@@ -82,6 +82,64 @@ Advanced spectator seating, parking spaces, and event management facilities enha
         </p>
       </div>`
 }
+
+
+// 1st
 show_more_btn_ele.addEventListener('click',show_more);
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all top attractions images
+  const attractionImages = document.querySelectorAll('.attraction-image');
+
+  // Add event listener for each image
+  attractionImages.forEach(image => {
+    image.addEventListener('onclick', () => {
+      // Programmatically trigger the modal
+      const modal = new bootstrap.Modal(document.getElementById('topattractions1Modal'));
+      modal.show();
+    });
+  });
+});
+
+const attractions = {
+  "Mahabodhi Temple": { lat: 24.6951, lng: 84.9913 },
+  "Gurpa Hill": { lat: 24.5877, lng: 85.0046 },
+  "Nature Safari": { lat: 25.0078, lng: 85.4199 },
+  "Kaimur Waterfall": { lat: 24.6291, lng: 83.6218 },
+};
+
+document.querySelectorAll('.attraction-image').forEach(item => {
+  item.addEventListener('click', event => {
+    const attractionName = item.querySelector('h1').innerText;
+    const coordinates = attractions[attractionName];
+
+    // Update modal image
+    const modalImage = document.getElementById('attraction-image');
+    modalImage.src = item.querySelector('img').src;
+
+    // Update modal title
+    document.getElementById('topattractions1ModalLabel').innerText = attractionName;
+
+    // Initialize map
+    setTimeout(() => {
+      initMap(coordinates.lat, coordinates.lng);
+    }, 200); // Ensure the modal is fully rendered before initializing the map
+  });
+});
+
+function initMap(lat, lng) {
+  const map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat, lng },
+    zoom: 14,
+  });
+
+  new google.maps.Marker({
+    position: { lat, lng },
+    map: map,
+    title: "Attraction Location",
+  });
+}
+
+
+
 
 
