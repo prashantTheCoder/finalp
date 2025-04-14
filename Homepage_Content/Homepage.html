@@ -7,7 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="Homepage.css">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -25,7 +26,7 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="About.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,15 +34,24 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Mountains.html">Mountains</a></li>
-                    <li><a class="dropdown-item" href="#">Waterfalls</a></li>
-                    <li><a class="dropdown-item" href="#">Arts and Culture</a></li>
+                    <li><a class="dropdown-item" href="Waterfall.html">Waterfalls</a></li>
+                    <li><a class="dropdown-item" href="Arts&Culture.html">Arts and Culture</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Historical Places</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Historical Places</a></li> -->
                   </ul>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Glories</a>
-                </li> -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GI Tagged Products
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="GI_Agricultural.html">Agricultural Products</a></li>
+                    <li><a class="dropdown-item" href="#">Handicrafts and Arts</a></li>
+                    <li><a class="dropdown-item" href="#">Food Products</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <!-- <li><a class="dropdown-item" href="#">Historical Places</a></li> -->
+                  </ul>
+                </li>
               </ul>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -50,6 +60,8 @@
             </div>
           </div>
           <button type="button"class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+          <button type="button"class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal" class="donate">Donate Us</button>
 
           
         </nav>
@@ -251,64 +263,37 @@
     </div>
 
      
+    <!-- loginModal -->
         
-        <!-- LoginModal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form class="row g-3">
+
+                <form action="signin.php" class="row g-3" method="post">
                   <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" name="Email" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4" name="Password" required>
                   </div>
                   <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Check me out
-                      </label>
-                    </div>
+                      <button type="submit" class="btn btn-primary" id="signin" onclick=status();>Sign in</button> 
                   </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </div>
-                </form>
+              </form>
+
+              
+              </div>
           </div>
-            </div>
-          </div>
-        </div>
+      </div>
+  </div>
+  
 
         <h1 class="upcoming-heading">Bihar to host Khelo India Youth Games, Para Games in 2025</h1>
         <div class="upcomings-container">
@@ -525,9 +510,47 @@ It features a central tower surrounded by four smaller towers, symbolizing the e
     </div>
   </div>
 </div>
-      </main>
-      
 
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi magnam sint. Dolorum modi doloribus corporis cum tenetur sapiente unde delectus officiis! Vero rem omnis quo? Vitae necessitatibus voluptate natus quia porro ex veniam unde nemo quisquam aspernatur hic, ad accusamus voluptatem, et, atque expedita at repellendus quos distinctio quam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tempora unde repellendus repudiandae optio distinctio labore, doloribus, explicabo aliquid veritatis adipisci itaque suscipit deserunt voluptatibus eum similique, delectus atque asperiores minima ipsam ab eligendi non. Dignissimos cum, neque rem tempore praesentium et ut libero eos dolor sit distinctio, impedit nemo? Rem hic delectus corporis error id inventore reprehenderit maxime odio! Nobis ut eaque nihil necessitatibus nam nulla?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis unde molestiae doloribus mollitia soluta repudiandae doloremque enim, aliquam commodi deserunt accusantium illo a incidunt nam explicabo reprehenderit culpa quis ea. Repellat enim ducimus rerum nostrum culpa voluptates sunt fugiat ipsam illo! A numquam eum sunt maiores repellendus consequuntur ex dolor saepe natus quaerat reprehenderit corporis velit sit earum dolorem, nesciunt placeat voluptatum, eos animi nulla impedit doloribus. Nostrum, laborum ad. Architecto voluptate iusto ratione vero reiciendis aliquid obcaecati non assumenda, deserunt repellat totam quaerat! Dignissimos, sint est. In corporis pariatur inventore eius, sit temporibus excepturi consequuntur eaque accusamus ex aliquid.
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, doloribus delectus hic sequi voluptatem amet iste beatae, eum, at aliquam sapiente nam quam. Fugiat ratione sapiente cupiditate non vitae, adipisci amet iste aspernatur! Voluptates consectetur deleniti nobis ex. Sequi modi voluptatibus eum tenetur accusamus voluptates accusantium vero ipsam omnis, maiores nobis mollitia consequatur rerum molestiae? Hic, assumenda doloremque quis reprehenderit dolor neque eveniet id voluptas dolorem consectetur a nobis! Ipsum possimus dolorem quam vel blanditiis quos alias cumque necessitatibus! Ex sequi ea culpa, iure suscipit mollitia minima officia, nesciunt ullam voluptates est distinctio? Fugit, omnis consequatur. Animi optio mollitia fugit!The end
+</p>
+
+
+      </main>
+
+    
+<footer style="background: linear-gradient(135deg, #2c3e50, #34495e); color: #fff; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+    <!-- Site Branding -->
+    <div style="flex: 1; min-width: 200px; text-align: left;">
+      <h2 style="margin-bottom: 10px; font-size: 24px; color: #1abc9c;">Bihar Darshanamm</h2>
+      <p style="margin: 5px 0; font-size: 14px;">Exploring the Cradle of Ancient Heritage</p>
+      <p style="margin: 5px 0; font-size: 12px;">&copy; 2024 Bihar Darshanamm. All rights reserved.</p>
+    </div>
+    <!-- Quick Links -->
+    <div style="flex: 1; min-width: 200px; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px; color: #f39c12;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#home" style="color: #ecf0f1; text-decoration: none; display: block; margin: 5px 0;">🏠 Home</a></li>
+        <li><a href="#about" style="color: #ecf0f1; text-decoration: none; display: block; margin: 5px 0;">ℹ️ About</a></li>
+        <li><a href="#places" style="color: #ecf0f1; text-decoration: none; display: block; margin: 5px 0;">📍 Places</a></li>
+        <li><a href="#contact" style="color: #ecf0f1; text-decoration: none; display: block; margin: 5px 0;">📞 Contact</a></li>
+      </ul>
+    </div>
+    <!-- Social Media Links -->
+    <div style="flex: 1; min-width: 200px; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px; color: #f39c12;">Follow Us</h3>
+      <div>
+        <a href="https://facebook.com" target="_blank" style="color: #3b5998; font-size: 20px; margin-right: 10px;"><i class="fab fa-facebook"></i> Facebook</a>
+        <br>
+        <a href="https://twitter.com" target="_blank" style="color: #1da1f2; font-size: 20px; margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
+        <br>
+        <a href="https://instagram.com" target="_blank" style="color: #e1306c; font-size: 20px; margin-right: 10px;"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -536,6 +559,8 @@ It features a central tower surrounded by four smaller towers, symbolizing the e
     <script src="Homepage.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-fb9G05iYBXuFipQLLfxXlkGQVA6uHs&callback=initMap" async defer></script>
+
+    <script src="Form.js"></script>
 
   </body>
 </html>
