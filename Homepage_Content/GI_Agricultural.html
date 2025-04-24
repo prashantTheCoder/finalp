@@ -13,7 +13,7 @@
 
    
      <main>
-      
+       
         <div class="img-container">
             <h1 id="heading">GI Tagged Products of Bihar:</h1>
             <img src="litchi.jpg" alt="GI Tagged Products" class="bg-img">
@@ -22,7 +22,15 @@
             </div>
         </div>
         
-        
+        <div class="container">
+            <h1>Search Products</h1>
+    
+            <!-- Search Bar -->
+            <input type="text" id="search-input" placeholder="Search for products..." oninput="searchProducts()">
+            
+            <!-- Results Section -->
+           
+        </div>
     <h1>Agricultural Products</h1>
     <div class="product-cards">
         
@@ -34,7 +42,7 @@
             <h2 id="aam">Bhagalpuriya Zardalu Aam</h2>
 
             <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
+            <p class="short-desc">The Bhagalpuriya Zardalu Aam is a special variety of mango grown in the Bhagalpur region of Bihar. It is known for its distinct aroma, rich taste, juicy pulp, and golden-yellow skin. The word “Zardalu” is derived from Persian, meaning "golden.Primarily cultivated in Bhagalpur, along the banks of the Ganges.</p>
         </div>
         <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
         
@@ -48,7 +56,7 @@
             <h2 id="aam"> Shahi Litchi</h2>
 
             <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
+            <p class="short-desc">Shahi Litchi is a premium variety of litchi grown in Bihar, known for its sweet taste, juiciness, and unique fragrance. The word “Shahi” means royal, and this litchi truly lives up to its name. Shahi Litchi is celebrated for its distinct sweet taste and a characteristic rose-like aroma. </p>
         </div>
         <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
         </div>
@@ -61,7 +69,7 @@
             <h2 id="aam"> Magahi Paan</h2>
 
             <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
+            <p class="short-desc">Magahi Paan is a famous betel leaf variety from the Magadh region of Bihar. Known for its soft texture, sweet taste, and long-lasting aroma, it’s cherished not just in Bihar but across India for its premium quality.The unique blend of ingredients and spices, combined with the technique of wrapping the paan in an edible leaf, and refreshing treat.</p>
         </div>
         <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
         </div>
@@ -74,24 +82,11 @@
             <h2 id="aam"> Mithila Makhana</h2>
 
             <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
+            <p class="short-desc">Mithila Makhana refers to fox nuts or popped lotus seeds cultivated in the Mithila region of Bihar. It is a nutrient-rich, crunchy, and healthy snack that has been a part of Maithil cuisine and culture for centuries. It's a special variety of aquatic fox nut, scientifically named Euryale ferox Salisb.</p>
         </div>
         <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
         </div>
-
-<!-- Card-5 -->
-        <div class="cards"  id="card-5">
-            <div class="cards-img">
-                <img src="silao-khaja.webp" alt="">
-            </div>
-            <h2 id="aam"> Silao Khaja</h2>
-
-            <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
-        </div>
-        <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
-        </div>
-<!-- Card-6 -->
+<!-- card-5 -->
         <div class="cards" id="card-6">
             <div class="cards-img">
                 <img src="katrni-rice-500x500.webp" alt="">
@@ -99,26 +94,112 @@
             <h2 id="aam"> Katarni Rice</h2>
 
             <div class="short-desc-container">
-            <p class="short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro, natus nostrum, veniam provident modi tempore distinctio quas molestiae voluptatibus eos nemo magnam sint! Beatae illum iure incidunt illo architecto! Maiores, eum! Dolor amet vero qui libero accusantium. Delectus corporis dignissimos, beatae harum tempore quis eligendi vel autem non sint?</p>
+            <p class="short-desc">Katarni Rice is a highly aromatic, short-grain rice variety grown in Bihar. The name Katarni means "dagger-shaped", referring to the shape of the paddy seed. It is cherished for its distinct aroma, delicate texture, and delicious flavor, especially when used in traditional dishes and desserts</p>
         </div>
         <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
         </div>
+    </div><br>
+
+
+    <!-- Handicrafts -->
+     <!-- Card1 -->
+     <h1>Handicrafts Products</h1>
+<div class="handicraft-products">
+   
+     <div class="cards" id="card-11">
+      
+        <div class="cards-img">
+            <img src="Radha-krishna-in-madhubani-paintings.jpg" alt="">
+        </div>
+        <h2 id="aam">Madhubani Painting</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">Madhubani Painting, also known as Mithila Art, is a traditional folk art form originating from the Mithila region of Bihar, especially in Madhubani district. It is known for its vibrant colors, intricate patterns, and themes drawn from mythology, nature, and daily life. Traditionally created by women on mud walls and floors using twigs and natural dyes.</p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    
     </div>
 
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="path-to-your-image.jpg" alt="Madhubani Painting" />
-            <h3>Madhubani Painting</h3>
-          </div>
-          <div class="flip-card-back">
-            <h3>Madhubani Painting</h3>
-            <p>Traditional art from Mithila region of Bihar, known for intricate patterns and natural dyes.</p>
-            <p><strong>GI Tag Year:</strong> 2007</p>
-          </div>
+    <!-- Card2 -->
+    <div class="cards" id="card-22">
+        <div class="cards-img">
+            <img src="sujini.jpeg" alt="">
         </div>
-      </div>
+        <h2 id="aam"> Sujani Embroidery Work</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">Sujani Embroidery is a traditional textile art form from Bihar, especially practiced in Muzaffarpur and surrounding regions.Sujani embroidery is widely used in quilts, wall hangings, bedspreads, and garments, and it received the GI tag in 2020.Mainly practiced by women artisans of rural Bihar.
+        </p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    </div>
+
+    <!-- Card3 -->
+    <div class="cards" id="card-3">
+        <div class="cards-img">
+            <img src="sikki-grass-basket.jpg" alt="">
+        </div>
+        <h2 id="aam">Sikki Grass Craft</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">
+            Sikki Grass Craft is a unique and eco-friendly handicraft from Bihar, especially popular in Madhubani, Darbhanga, and Sitamarhi districts. It uses the golden-colored Sikki grass, which is dried, softened, and skillfully woven by women artisans into beautiful items like baskets, trays, toys, idols, and ornaments.It was granted the GI tag in 2018.
+
+        </p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    </div>
+
+    <!-- Card-4 -->
+    <div class="cards" id="card-4">
+        <div class="cards-img">
+            <img src="bhagalpur-silk.jpg" alt="">
+        </div>
+        <h2 id="aam"> Bhagalpuriya Silk</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">Bhagalpuriya Silk, also known as Bhagalpur Silk or Tussar Silk, is a famous handwoven silk fabric from Bhagalpur, Bihar, with a rich history of over 200 years. Known for its natural sheen, lightweight texture, and durability, it is woven from Tussar cocoons, mostly produced locally.</p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    </div>
+
+    <div class="cards" id="card-6">
+        <div class="cards-img">
+            <img src="khatwa.jpg" alt="">
+        </div>
+        <h2 id="aam"> Applique Khatwa</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">Applique (Khatwa) Work of Bihar is a traditional handicraft that involves stitching decorative fabric pieces onto a base cloth to create intricate designs. Originating mainly from Patna, Nalanda, and Gaya, it features motifs inspired by nature, mythology, and daily life.</p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    </div>
+</div>
+
+
+
+
+<h1 id="food-products">Food Products</h1>
+<div class="handicraft-products">
+   
+     <div class="cards" id="card-11">
       
+        <div class="cards-img">
+            <img src="silao-khaja.webp" alt="">
+        </div>
+        <h2 id="aam">Silao Khaja</h2>
+
+        <div class="short-desc-container">
+        <p class="short-desc">Silao Khaja is a traditional layered sweet delicacy from Silao town in the Nalanda district of Bihar. Made from refined wheat flour, ghee, and sugar, it is known for its crispy, multi-layered texture and melt-in-the-mouth taste. What sets Silao Khaja apart is the unique climate and water of the region, which contribute to its distinct crispiness. </p>
+    </div>
+    <div class="btn-ele"><button id="explore-now">Explore Now</button></div>
+    
+    </div>
+
+
+
+
+ 
 
     
 </main>

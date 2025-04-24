@@ -94,31 +94,18 @@ h1{
     background-color: #297984;
 }
 #card-1{
-    background-image: linear-gradient(to right, #a9b2a3, #feb500);
-    /* box-shadow: 13px 13px 5px #d49f0abf; */
-}
-#card-11{
     background-image:  linear-gradient(to right, #f35b0e, #3d92dd);
-    margin-top: 2%;
     /* box-shadow: 13px 13px 5px #d49f0abf; */
 }
 #card-2{
     /* background-color: #ef5672; */
-    background-image: linear-gradient(to right, #ef5672 , #ea1031);
-
-    /* box-shadow: 13px 13px 5px #f85371bf; */
-}
-#card-22{
-    /* background-color: #ef5672; */
     background-image: linear-gradient(to right, #e49b3f, #dd1323);
-
     /* box-shadow: 13px 13px 5px #f85371bf; */
 }
 
 #card-3{
     /* background-color: #91e06fc4; */
-    background-image: linear-gradient(to right, #b9eba3c4 , #0be248);
-
+    background-image: linear-gradient(to right, #a7164f, #1ca989);
     
     /* box-shadow: 13px 13px 5px #91e06fad; */
 }
@@ -130,19 +117,12 @@ h1{
     
 }
 #card-5{
-    background-image: linear-gradient(to right, #1ea3dd, #efe5e4);
+    background-image: linear-gradient(to right, #ffd99f, #e76e0a);
     /* box-shadow: 13px 13px 5px #f9aa57; */
 }
 #card-6{
-    background-image: linear-gradient(to right, #b42118, #1ac5b7);
+    background-image:  linear-gradient(to right, #d7d1c0, white);
     /* box-shadow: 13px 13px 5px #f0e6dde6; */
-}
-#card-11{
-    background-image: linear-gradient(to right, #b35328, #b59e95);
-    /* box-shadow: 13px 13px 5px #f0e6dde6; */
-}
-#food-products{
-    margin-top: 20%;
 }
 .short-desc-container{
     height: 25%;
@@ -299,19 +279,3 @@ h1{
     transform: translateY(-40px);
     filter: drop-shadow(0 25px 25px rgba(203, 191, 191, 0.842));
   }
-
-  .container {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* ensures it stays above other elements */
-    padding: 10px;
-    /* border-bottom: 1px solid #ccc; optional: gives a subtle border */
-}
-.handicraft-products{
-    height: 800px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 15%;
-}
